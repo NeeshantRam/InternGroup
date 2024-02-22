@@ -518,39 +518,40 @@
         </p>
         <h2>Ram Tamang</h2>
         <h3>BCA, Spring 2021</h3>
-        <i class="fa-solid fa-up-right-from-square"></i>
+        <i class="fa-solid fa-up-right-from-square ram"></i>
       </div>
     </div>
     <div class="testimonial1">
       <div class="testimonial1img">
-        <img src="image/testio1.jpeg" alt="Testimonial Image" />
+        <img src="image/sophia.avif" alt="Testimonial Image" />
       </div>
       <div class="testimonialcontent">
         <img src="quote.svg" alt="Quote Icon" />
         <p>
-          Oxford has always been more than just plain academics. It offers
-          various platforms to groom oneself into a confident individual,
-          and I am.
+          Oxford College has truly transformed my high school years. 
+          In a short time, I've grown academically, socially, and emotionally,
+          thanks to their
         </p>
-        <h2>Ram Tamang</h2>
-        <h3>BCA, Spring 2021</h3>
-        <i class="fa-solid fa-up-right-from-square"></i>
+        <h2>Sophia ALE</h2>
+        <h3>BBA, Spring 2021</h3>
+        <i class="fa-solid fa-up-right-from-square sophia"></i>
       </div>
     </div>
     <div class="testimonial1">
       <div class="testimonial1img">
-        <img src="image/testio1.jpeg" alt="Testimonial Image" />
+        <img src="image/suman.avif" alt="Testimonial Image" />
       </div>
       <div class="testimonialcontent">
         <img src="quote.svg" alt="Quote Icon" />
         <p>
-          Oxford has always been more than just plain academics. It offers
-          various platforms to groom oneself into a confident individual,
-          and I am.
+          Oxford College champions daily learning through
+           diverse educational platforms. Engaging in various 
+           activities, students develop 
+           
         </p>
-        <h2>Ram Tamang</h2>
-        <h3>BCA, Spring 2021</h3>
-        <i class="fa-solid fa-up-right-from-square"></i>
+        <h2>Suman Panta</h2>
+        <h3>BCA, Fall 2020</h3>
+        <i class="fa-solid fa-up-right-from-square suman"></i>
       </div>
     </div>
   </div>
@@ -559,7 +560,7 @@
     <div class="testimonialinjs">
       <button id="closeButton"><i class="fa-solid fa-x"></i></button>
       <div class="testimonial1img">
-        <img src="testio1.jpeg" alt="Testimonial Image" style="display: block; margin: auto;"/>
+        <img src="image/testio1.jpeg" alt="Testimonial Image" style="display: block; margin: auto;"/>
       </div>
       
       <div class="testimonialcontent">
@@ -576,12 +577,68 @@
         <h2>Ram Tamang</h2>
         <h3>BCA, Spring 2021</h3>
       </div>
+      
     </div>
-    
   </div>
+
+  <div class="overlay"></div>
+  <div class="modal1">
+    <div class="testimonialinjs">
+      <button id="closeButton1"><i class="fa-solid fa-x"></i></button>
+      <div class="testimonial1img">
+        <img src="image/sophia.avif" alt="Testimonial Image" style="display: block; margin: auto;"/>
+      </div>
+      
+      <div class="testimonialcontent">
+        <img src="quote.svg" alt="Quote Icon" />
+        <p>
+          Oxford College has truly transformed my high school years. 
+          In a short time, I've grown academically, socially, and emotionally,
+           thanks to their supportive environment. From breakthroughs to personal
+            development, Oxford College provides the perfect platform for learning and progress.
+        </p>
+        <h2>Sophia Ale</h2>
+        <h3>BCA, Spring 2021</h3>
+      </div>
+      
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="modal2">
+    <div class="testimonialinjs">
+      <button id="closeButton2"><i class="fa-solid fa-x"></i></button>
+      <div class="testimonial1img">
+        <img src="image/suman.avif" alt="Testimonial Image" style="display: block; margin: auto;"/>
+      </div>
+      
+      <div class="testimonialcontent">
+        <img src="quote.svg" alt="Quote Icon" />
+        <p>
+          Oxford College champions daily learning through
+          diverse educational platforms. Engaging in various 
+          activities, students develop cooperation, leadership,
+           and resilience. Education here transcends the classroom,
+            fostering holistic growth. At Oxford, every day presents an 
+            opportunity for academic and personal advancement.
+        </p>
+        <h2>Suman Panta</h2>
+        <h3>BCA, Fall 2020</h3>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
   <div class="moretestimonial">
     <div class="divofmoretestimonial">
-      <p>More Student Experiences</p><i class="fa-solid fa-arrow-right-long"></i>
+      <a href="testimonial.html"><p>More Student Experiences</p></a><i class="fa-solid fa-arrow-right-long"></i>
     </div>
     <hr>
 
@@ -715,8 +772,10 @@
       });
     });
 /*JS for Testimonial*/
+
+/*Ram*/
 document.addEventListener("DOMContentLoaded", function () {
-        const faSolidIcons = document.querySelectorAll(".fa-solid");
+        const faSolidIcons = document.querySelectorAll(".ram");
         const modal = document.querySelector(".modal");
         const overlay = document.querySelector(".overlay");
 
@@ -731,6 +790,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         });
       });
+     
       document.addEventListener('DOMContentLoaded', function () {
         const closeButton = document.getElementById('closeButton');
         const modal = document.querySelector('.modal');
@@ -745,6 +805,76 @@ document.addEventListener("DOMContentLoaded", function () {
           overlay.style.display = 'none';
         }
       });
+
+/*Sophiaa*/
+document.addEventListener("DOMContentLoaded", function () {
+        const faSolidIcons = document.querySelectorAll(".sophia");
+        const modal1 = document.querySelector(".modal1");
+        const overlay = document.querySelector(".overlay");
+
+        faSolidIcons.forEach(function (icon) {
+          icon.addEventListener("click", function () {
+            modal1.style.display = "block";
+            overlay.style.display = "block";
+            overlay.addEventListener("click", function () {
+              modal1.style.display = "none";
+              overlay.style.display = "none";
+            });
+          });
+        });
+      });
+     
+      document.addEventListener('DOMContentLoaded', function () {
+        const closeButton1= document.getElementById('closeButton1');
+        const modal1 = document.querySelector('.modal1');
+        const overlay = document.querySelector('.overlay');
+
+        closeButton1.addEventListener('click', function () {
+          closeModal1();
+        });
+
+        function closeModal1() {
+          modal1.style.display = 'none';
+          overlay.style.display = 'none';
+        }
+      });
+/*Suman*/
+
+document.addEventListener("DOMContentLoaded", function () {
+        const faSolidIcons = document.querySelectorAll(".suman");
+        const modal2 = document.querySelector(".modal2");
+        const overlay = document.querySelector(".overlay");
+
+        faSolidIcons.forEach(function (icon) {
+          icon.addEventListener("click", function () {
+            modal2.style.display = "block";
+            overlay.style.display = "block";
+            overlay.addEventListener("click", function () {
+              modal2.style.display = "none";
+              overlay.style.display = "none";
+            });
+          });
+        });
+      });
+     
+      document.addEventListener('DOMContentLoaded', function () {
+        const closeButton2 = document.getElementById('closeButton2');
+        const modal2 = document.querySelector('.modal2');
+        const overlay = document.querySelector('.overlay');
+
+        closeButton2.addEventListener('click', function () {
+          closeModal2();
+        });
+
+        function closeModal2() {
+          modal2.style.display = 'none';
+          overlay.style.display = 'none';
+        }
+      });
+
+
+
+
   </script>
 
 

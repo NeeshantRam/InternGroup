@@ -661,7 +661,7 @@ Our Courses
 /***********************Gallery********************/
 .viewmore a {
   font-size: 18px;
-  color: #009aca;
+
   font-weight: bold;
   margin-left: 1200px;
   display: flex;
@@ -671,7 +671,7 @@ Our Courses
   text-decoration: none;
 }
 .viewmore a:hover {
-  color: #d73438;
+  color: #009aca;
 }
 .viewmore .fa-solid {
   margin-top: 5px;
@@ -849,7 +849,30 @@ Our Courses
   border-radius: 8px;
   z-index: 1000;
 }
-
+.modal1 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 1000;
+}
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 1000;
+}
 .overlay {
   display: none;
   position: fixed;
@@ -860,24 +883,36 @@ Our Courses
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
+
 #closeButton {
   background-color: transparent;
   border: 0;
 }
+#closeButton1 {
+  background-color: transparent;
+  border: 0;
+}
+#closeButton2 {
+  background-color: transparent;
+  border: 0;
+}
 .testimonialinjs .fa-solid {
-  margin-left: 780px;
+  margin-left: 840px;
   cursor: pointer;
 }
 
 .moretestimonial hr {
-  width: 255px;
+  width: 280px;
 }
 .moretestimonial .fa-solid {
   margin-left: 4px;
-  padding-top: 2px;
+  padding-top: 5.5px;
 }
 .moretestimonial p {
   font-weight: bold;
+}
+.moretestimonial a {
+  text-decoration: none;
 }
 .moretestimonial :hover {
   cursor: pointer;
